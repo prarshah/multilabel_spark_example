@@ -4,9 +4,7 @@ import org.apache.log4j.{Logger, Level}
 object poc3 {
 
   def main(args: Array[String]): Unit = {
-    val logger = Logger.getRootLogger
-    logger.setLevel(Level.ERROR)
-
+  
     val sparkConf = new SparkConf()
       .setAppName("H2OAutoML_poc_2019")
       .setMaster("local[*]")
